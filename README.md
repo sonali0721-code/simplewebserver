@@ -39,8 +39,7 @@ Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 ```
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
-content = """
-<!DOCTYPE html>
+content = """<!DOCTYPE html>
 <html>
 <head>
     <title>Top 5 Revenue Generating Software Companies</title>
@@ -80,8 +79,8 @@ content = """
         </tr>
     </table>
 </body>
-</html>
-"""
+</html>"""
+
 
 class MyHandler(BaseHTTPRequestHandler):
     def do_GET(self):
@@ -96,10 +95,9 @@ httpd = HTTPServer(server_address, MyHandler)
 print("My webserver is running...")
 httpd.serve_forever()
 ```
-
 ## OUTPUT:
 ![alt text](<Screenshot (9).png>)
 ![alt text](<Screenshot (10).png>)
-
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
+
